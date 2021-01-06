@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int ans;
+        ans=(n%10-1)*10;
+        int x= (int) log10(n)+1;
+        ans+=x*(x+1)/2;
+        cout<<ans<<endl;
+    }
+    
+}
