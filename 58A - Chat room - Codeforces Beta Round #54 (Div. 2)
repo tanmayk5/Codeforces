@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string s;
+    cin>>s;
+    string h="hello";
+    int i=0,j=0;
+    bool ans=false;
+    while(i<s.length()){
+        if(s[i]==h[j]){
+            j++;
+        }
+        i++;
+        if(j==5){
+            ans=true;
+            break;
+        }
+    }
+    if(ans){
+        cout<<"YES";
+    }
+    else{
+        cout<<"NO";
+    }
+}
